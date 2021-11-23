@@ -1,0 +1,781 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #ececec;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    color: #0A2342;
+    text-align: center;
+}
+
+button:hover {
+    -webkit-box-shadow: 4px 2px 9px -.8px #000;
+    box-shadow: 4px 2px 9px -.8px #000;
+    background: #ee6352;
+}
+
+.logo-text {
+    width: 400px;
+}
+
+/* navbar */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    top: 1em;
+    width: 100%;
+    height: 60px;
+    background: rgba(238, 99, 82, .8);
+}
+
+.navbar.active {
+    background: rgba(238, 99, 82, 1);
+}
+
+.navbar.transparent {
+    background: transparent;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 50%;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo-icon {
+    height: 20px;
+    margin-right: .7em;
+}
+
+.navbar a {
+    margin: 1em 0;
+    padding: 10px;
+    color: #0A2342;
+    float: right;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    color: #12427c;
+}
+
+.navbar a:last-child {
+    border: 1px solid #12427c;
+}
+
+/* header */
+
+.header-main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header-left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header-image {
+    width: 100%;
+}
+
+.header-right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    color: #ececec;
+}
+
+.header-right-container h2 {
+    color: #ececec;
+}
+
+.header-right-container h1 {
+    color: #ececec;
+    font-size: 2.8em;
+}
+
+/* login */
+
+.login-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 50%;
+    background-color: #0A2342;
+    height: 100%;
+}
+
+.login-right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 50%;
+    background-color: #ececec;
+    height: 100%;
+}
+
+.login-right-inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    margin: 1em;
+    padding: 10px;
+    border-radius: 2px;
+    height: 100%;
+}
+
+.login-form input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid rgb(226, 223, 223);
+}
+
+.login-form label {
+    padding: 8px 0;
+    margin-left: 5px;
+}
+
+.login-form button {
+    background-color: #82886D;
+    color: white;
+    margin: 8px 5px;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.signup-link {
+    font-weight: 600;
+    color: #0A2342;
+}
+
+/* register */
+
+.register-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 50%;
+    background-color: #0A2342;
+    height: 100%;
+}
+
+.register-right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 50%;
+    background-color: #ececec;
+    height: 100%;
+}
+
+.register-right-inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    margin: 1em;
+    padding: 10px;
+    border-radius: 2px;
+    height: 100%;
+}
+
+.register-form input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid rgb(226, 223, 223);
+}
+
+.register-form label {
+    padding: 8px 0;
+    margin-left: 5px;
+}
+
+.register-form button {
+    background-color: #82886D;
+    color: white;
+    margin: 8px 5px;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+/* routines */
+
+.single-routine-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.single-routine-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 300px;
+    text-align: center;
+    margin: 1.25em;
+    padding: 25px;
+    background-color: #0a2342;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+}
+
+.single-routine-username {
+    text-decoration: underline;
+    color: #f87060;
+    font-weight: 600;
+    margin: .6em;
+    padding-top: 10px;
+}
+
+.single-routine-title {
+    padding: 5px;
+    color: #ececec;
+    width: 250px;
+}
+
+.single-routine-card p {
+    color: #ececec;
+}
+
+.single-ra-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+}
+
+.routines-main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.routine-activity-link button {
+    background-color: #82886d;
+    color: white;
+    margin: 8px 5px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100px;
+    font-weight: 600;
+}
+
+/* routine activity */
+
+.single-routine-activity-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin-top: 6%;
+}
+
+.single-routine-activity-main h2 {
+    margin-bottom: 1em;
+    font-size: 35px;
+}
+
+.routine-activity-count {
+    color: #ee6352;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 1em;
+}
+
+.routine-activity-card {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 160px;
+}
+
+.routine-activity-card-left {
+    margin-right: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+
+.routine-activity-card-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+}
+
+.routine-activity-card-right h3 {
+    font-size: 25px;
+}
+
+.blue {
+    background: #0A2342;
+    color: #ececec;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+}
+
+.grey {
+    background: #ECECEC;
+    color: #0A2342;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+}
+
+.grey h3 {
+    color: #ee6352;
+}
+
+.routine-activity-card input[type=checkbox] {
+    transform: scale(2);
+}
+
+/* My Routine */
+
+.my-routines-main-container {
+    margin-top: 4%;
+}
+
+.no-myroutines {
+    margin: 1em;
+}
+
+.user-routines-main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin-top: 1em;
+}
+
+/* activities */
+
+.single-activity-main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-items: center;
+    height: 100vh;
+    width: 80%;
+    margin-top: 3.5em;
+}
+
+.single-activity-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin: .5em;
+    padding: 25px;
+    background-color: #0a2342;
+}
+
+.single-activity-card button {
+    color: #ee6352;
+    font-weight: 600;
+}
+
+.single-activity-description .blue {
+    margin: .6em;
+    padding: 10px;
+    color: #ececec;
+    width: 250px;
+}
+
+.single-activity-description .grey {
+    margin: .6em;
+    padding: 10px;
+    color: #0A2342;
+    width: 250px;
+}
+
+.single-activity-card p {
+    color: #ececec;
+}
+
+.single-ar-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+}
+
+.activities-main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.activity-routine-link button {
+    background-color: #ee6352;
+    color: white;
+    margin: 8px 5px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100px;
+}
+
+/* create routine */
+
+.create-routine-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.create-routine-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    margin: 1em;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.create-routine-form input {
+    padding: 10px;
+    margin: 5px;
+    border-bottom: 1px solid lightgrey;
+    background-color: #ececec;
+    color: #0A2342;
+    font-weight: 600;
+}
+
+.create-routine-form textarea {
+    padding: 10px;
+    margin: 5px;
+    border-bottom: 1px solid lightgrey;
+    background-color: #ececec;
+    color: #0A2342;
+    font-weight: 600;
+}
+
+.create-routine-form button {
+    background-color: #82886D;
+    color: white;
+    margin: 5px;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.create-routine-form p {
+    color: #ececec;
+}
+
+.routine-checkbox {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* create activity */
+
+.create-activity-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* create routineActivity */
+
+.italicized {
+    font-style: italic;
+}
+
+.create-routine-activity-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.create-routine-activity-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    margin: 1em;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.create-routine-activity-form input {
+    padding: 10px;
+    margin: 5px;
+    border-bottom: 1px solid lightgrey;
+    background-color: #ececec;
+    color: #0A2342;
+    font-weight: 600;
+}
+
+.create-routine-activity-form select {
+    padding: 10px;
+    margin: 5px;
+    border-bottom: 1px solid lightgrey;
+    background-color: #ececec;
+    color: #0A2342;
+    font-weight: 600;
+}
+
+.create-routine-activity-form button {
+    background-color: #82886D;
+    color: white;
+    margin: 5px;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.create-activity-main-container h2 {
+    color: #82886d;
+}
+
+/* activities */
+
+.single-activity-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.single-activity-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 30%;
+    height: 100vh;
+    background: #0A2342;
+    margin: 0;
+}
+
+.single-activity-title h2 {
+    color: #ececec;
+}
+
+.single-activity-routine {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 50%;
+    margin-top: 3em;
+}
+
+.activity-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 6rem;
+    width: 100%;
+}
+
+.activity-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 200px;
+    margin: .5em;
+    text-align: center;
+}
+
+.create-act {
+    background: #0A2342;
+}
+
+.create-logo {
+    width: 80px;
+    margin-bottom: .6em;
+}
+
+/* my routines */
+
+.single-my-routine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6%;
+}
+
+/* various buttons */
+
+.edit-delete {
+    margin: 1em;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    color: #ee6352;
+    padding: 10px;
+    font-size: 28px;
+    background-color: #0A2342;
+}
+
+.get-started {
+    background: transparent;
+    border: 1px solid #ececec;
+    color: #ececec;
+    padding: 15px;
+    margin: 1em;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.get-started:hover {
+    box-shadow: 5px 5px 20px rgba(130, 136, 109, 0.5);
+    -webkit-box-shadow: 5px 5px 20px rgba(130, 136, 109, 0.5);
+    -moz-box-shadow: 5px 5px 20px rgba(130, 136, 109, 0.5);
+}
+
+.test-image {
+    height: 300px;
+}
+
+.test-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    padding: 12px;
+    background-color: #0a2342;
+}
+
+.complete {
+    text-decoration: line-through;
+    text-decoration-color: #F87060;
+    text-decoration-thickness: 5px;
+}
+
+.add-activity-link button {
+    background-color: #ee6352;
+    color: white;
+    margin: 8px 5px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 400px;
+    font-weight: 600;
+    margin: 1.5em;
+}
+
+.white {
+    background: #ececec;
+}
